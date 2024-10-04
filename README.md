@@ -9,7 +9,7 @@ Transparency is key to building a more democratic and informed society. Through 
 
 The project is supported by Slapp, a trusted cloud partner providing the architecture needed to host, scale, and maintain the platform. By leveraging Microsoft Azure technologies, we ensure that the platform remains robust, secure, and performant, offering an environment that will allow this initiative to grow globally.
 
-I, Callum Maystone, am leading this initiative, backed by years of experience in cloud architecture, identity management, and secure data systems. My company, Slapp, specializes in providing cloud solutions that are scalable, secure, and built with cutting-edge technologies like Azure Web Apps and Azure Functions.
+Slapp, specializes in providing cloud solutions that are scalable, secure, and built with cutting-edge technologies like Azure Web Apps and Azure Functions.
 
 Why Does This Matter?
 
