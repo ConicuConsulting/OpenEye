@@ -1,5 +1,5 @@
 
-OpenEye - Global Government Transparency Tool
+# OpenEye - Global Government Transparency Tool
 
 Introduction
 
