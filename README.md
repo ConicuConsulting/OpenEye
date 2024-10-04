@@ -1,290 +1,142 @@
 
+OpenEye - Global Government Transparency Tool
 
-# OpenEye - Global Government Transparency Tool
+Introduction
 
-Overview
+Welcome to the Global Government Transparency Tool, a project designed to break down barriers to understanding how governments around the world operate. By giving citizens access to structured, unbiased information, we aim to make governance transparent, empowering people to ask the right questions and make informed decisions.
 
-The Global Government Transparency Tool is an open-source platform designed to provide comprehensive, unbiased access to the structures of governments and their policies worldwide. By focusing on tax laws, legislation, and policy frameworks, the tool enables users to explore how governments function, empowering them to make informed decisions and engage more effectively in political discourse.
+Transparency is key to building a more democratic and informed society. Through this project, we provide access to data on tax laws, legislative frameworks, and policies in an accessible and open-source format.
 
-This project leverages Slapp’s cloud architecture platform, utilizing Azure Web Apps, Azure Functions, and other Azure services for robust hosting and scalability. Slapp provides a prebuilt React environment, which we’re integrating into this project to deliver a seamless and interactive user experience.
+The project is supported by Slapp, a trusted cloud partner providing the architecture needed to host, scale, and maintain the platform. By leveraging Microsoft Azure technologies, we ensure that the platform remains robust, secure, and performant, offering an environment that will allow this initiative to grow globally.
 
-Key Features
+I, Callum Maystone, am leading this initiative, backed by years of experience in cloud architecture, identity management, and secure data systems. My company, Slapp, specializes in providing cloud solutions that are scalable, secure, and built with cutting-edge technologies like Azure Web Apps and Azure Functions.
 
-	•	Worldwide Coverage: Explore tax policies and legislation from countries around the globe.
-	•	Interactive Visualizations: Navigate complex government structures through maps, network graphs, and other visual tools built with React and integrated with Azure services.
-	•	Policy and Legislation Explorer: Access federal, state, and local policies in a user-friendly format.
-	•	Direct References: Every data point links back to the original official documents for verification.
-	•	Collaborative Platform: Contribute data from your country or region to expand the global database.
-	•	Scalable Cloud Infrastructure: Hosted on Slapp’s cloud platform using Azure Web Apps and Functions for high availability and performance.
-	•	Data Transparency: Presenting raw data without editorializing or political bias.
+Why Does This Matter?
+
+We live in a world where political and governmental decisions deeply affect us, but for many, the inner workings of governments are opaque. This project changes that by:
+
+	•	Providing Clear Information: Direct access to laws and policies in an understandable format.
+	•	Enabling Accountability: Allowing citizens to hold their governments responsible for their actions.
+	•	Fostering Global Collaboration: Anyone can contribute data and insights to this platform, enabling broader global transparency.
 
 Project Vision
 
-We envision this tool as a global resource for anyone seeking clarity and transparency about how governments operate. By providing direct access to policies and legislation, we aim to empower people to:
+We envision a world where transparency and understanding are the norms in governance. This platform will make governmental policies and actions available to everyone, no matter where they are or how much they know about politics. By democratizing access to this information, we enable people to:
 
-	•	Make Informed Decisions: Use factual data to make choices that affect their lives and communities.
-	•	Ask the Right Questions: Engage with legislators and policymakers using accurate information.
-	•	Enhance Civic Engagement: Foster a deeper understanding of governmental processes and encourage active participation.
-	•	Promote Global Transparency: Break down barriers to information access across different countries and regions.
-	•	Collaborate Internationally: Build a community where contributors worldwide can share and access governmental data.
+	•	Make Better Decisions: With the right knowledge, people can vote more intelligently, advocate for themselves, and engage in meaningful political discourse.
+	•	Ask the Right Questions: When citizens have access to clear and accurate information, they can hold their governments accountable.
+	•	Contribute Globally: We’re building a community where people around the world can contribute and verify data to ensure it stays accurate and up-to-date.
 
-Benefits
+High-Level Overview
 
-	•	Transparency: Clear, unbiased access to governmental data from around the world.
-	•	Global Reach: An ever-expanding platform that includes diverse governance systems and policies.
-	•	Educational Resource: A tool for learning about different governmental structures and their impacts on citizens.
-	•	Empowerment: Enables users to understand and influence policy decisions affecting their lives.
-	•	Non-Political: Focused solely on providing factual information without any political agenda.
-	•	Technical Credibility: Utilizes Slapp’s trusted cloud architecture and Azure services for reliable performance.
+Key Features
 
-Technical Architecture
+	•	Global Data Access: Explore government policies from countries all over the world, with the platform starting in the U.S. and expanding globally.
+	•	Interactive Visualizations: Use maps and graphs to visually explore complex governmental structures and policies.
+	•	Collaboration-Driven: We’re creating a community where anyone can contribute government data, ensuring broad coverage and accuracy.
+	•	Trusted Architecture: Built on Slapp’s cloud platform, using Azure Web Apps, Azure Functions, and Azure SQL, providing a highly reliable and scalable system.
+	•	Open Source with Integrity: We’re sharing all the code to foster collaboration, but with a license to ensure that no one misuses the tool to spread misinformation.
 
-Cloud Infrastructure
+Progressive Technical Breakdown
 
-	•	Hosting Platform: Slapp’s Cloud Architecture Platform
-	•	Cloud Provider: Microsoft Azure
-	•	Services Used:
-	•	Azure Web Apps: For hosting the React frontend application.
-	•	Azure Functions: For serverless backend operations and APIs.
-	•	Azure SQL Database: For storing structured data.
-	•	Azure Blob Storage: For storing unstructured data like documents and media.
-	•	Azure CDN: To deliver content with high bandwidth and low latency.
-	•	Azure Active Directory B2C (optional): For user authentication and security.
+High-Level Architecture
 
-Frontend
+This project uses Slapp’s cloud architecture on Microsoft Azure, ensuring that the platform is scalable, secure, and available globally. The platform is divided into several core components:
 
-	•	Framework: React.js (leveraging Slapp’s prebuilt React environment)
-	•	Features:
-	•	Responsive design for cross-device compatibility.
-	•	Interactive data visualizations using libraries like D3.js and Mapbox GL JS.
-	•	Integration with Azure services for seamless data access and updates.
+	•	Frontend: Built with React.js, hosted on Azure Web Apps for a seamless user experience.
+	•	Backend: Powered by Azure Functions, which handle data processing and API requests in a scalable, serverless environment.
+	•	Data Storage:
+	•	Azure SQL Database: For structured data storage of government policies and legislation.
+	•	Azure Blob Storage: For unstructured data, such as legal documents, PDFs, and multimedia.
+	•	APIs: RESTful APIs are used to serve data and manage user interactions.
+	•	Data Ingestion: Automated data ingestion pipelines using Azure Functions to regularly fetch and update the data from governmental websites and validated sources.
 
-Backend
+Technical Details
 
-	•	Serverless Architecture: Utilizing Azure Functions for scalable backend processes.
-	•	APIs:
-	•	RESTful APIs built with Node.js or Python (depending on the team’s expertise).
-	•	Secure endpoints for data retrieval and user interactions.
-	•	Data Processing:
-	•	Scheduled tasks for data ingestion and processing using Azure Functions and Azure Logic Apps.
+1. Frontend (React.js)
 
-Database
+	•	Hosted on Azure Web Apps: This ensures that the frontend is scalable and always available.
+	•	Responsive UI: The platform is built to be responsive, ensuring users can access it on all devices.
+	•	Visualizations: Utilizing D3.js and Mapbox GL JS, the frontend enables users to explore the interconnectedness of laws, tax policies, and governmental structures.
 
-	•	Primary Database: Azure SQL Database for relational data.
-	•	Secondary Storage: Azure Blob Storage for large files and documents.
-	•	Data Access Layer: Implemented with Entity Framework Core or equivalent ORM for efficient data handling.
+2. Backend (Azure Functions)
 
-Security and Compliance
+	•	Serverless Architecture: Built on Azure Functions, the backend is highly scalable and handles fluctuating traffic efficiently.
+	•	APIs: The backend exposes RESTful APIs for the frontend to query data and perform operations.
+	•	Data Processing: Functions are used to ingest data from government websites, process it, and store it in the database or blob storage.
+	•	Security: API endpoints are secured using Azure Active Directory B2C, ensuring secure access and authentication.
 
-	•	Data Encryption: At rest and in transit using Azure’s encryption services.
-	•	Authentication: Potential integration with Azure Active Directory B2C for secure user management.
-	•	Compliance Standards: Adhering to GDPR and other relevant data protection regulations.
+3. Data Storage
 
-Future Plans
+	•	Azure SQL Database: The relational database is used to store structured data about tax policies, legislation, and their relationships.
+	•	Azure Blob Storage: Legal documents and unstructured data are stored here, allowing for efficient access and scaling.
+	•	Caching: We implement caching mechanisms to speed up data retrieval and improve the user experience.
 
-	•	Global Expansion: Continuously add more countries, regions, and localities to the platform.
-	•	Enhanced Visualizations: Develop new tools to better represent complex policy relationships.
-	•	Community Building: Foster an active community of contributors and users to collaborate on data collection and platform improvement.
-	•	Localization: Offer multilingual support and localized content to make the platform accessible to a wider audience.
-	•	Integration with Educational Institutions: Partner with schools and universities to use the tool as a learning resource.
+4. Data Ingestion Pipelines
 
-Getting Started
+	•	Automated Data Updates: Scheduled Azure Functions pull data from validated governmental sources (primarily .gov domains) to ensure that the database is up-to-date.
+	•	OCR and Parsing: For scanned documents, Tesseract OCR is used to extract text, which is then processed and stored.
+	•	Data Validation: Before storing the data, it’s validated against known sources to prevent misinformation or errors.
 
-Prerequisites
+Detailed Infrastructure Overview
 
-	•	Azure Account: Required to access Azure services via Slapp’s platform.
-	•	Slapp Access: Permissions to use Slapp’s prebuilt React environment and cloud resources.
-	•	Development Tools:
-	•	Node.js and npm for frontend development.
-	•	Python 3.x or Node.js for backend development (depending on language choice).
-	•	Azure CLI: For managing Azure resources.
+1. Azure Web Apps
 
-Setup Instructions
+	•	Scalable Frontend Hosting: The platform leverages Azure Web Apps for easy deployment and scaling.
+	•	Continuous Deployment: Integrated with GitHub Actions for CI/CD pipelines, enabling seamless updates.
 
-	1.	Clone the repository:
+2. Azure Functions
 
-git clone https://github.com/yourusername/global-govtransparency-tool.git
+	•	Consumption Plan: The serverless model allows the platform to scale automatically based on traffic.
+	•	Bindings: Input/output bindings allow the functions to interact with the Azure SQL Database, Blob Storage, and other services effortlessly.
+	•	Event-Driven Architecture: Azure Functions are triggered by events such as data updates, user interactions, or scheduled jobs.
 
+3. Azure SQL Database
 
-	2.	Install frontend dependencies:
+	•	Elastic Pools: Used for dynamic scaling of the database, allowing us to adjust resources based on demand.
+	•	Relational Data Modeling: We use a normalized database schema to map out government policies, laws, and relationships effectively.
 
-cd global-govtransparency-tool/src/webapp
-npm install
+4. Azure Blob Storage
 
+	•	Storage Tiers: We utilize the Hot and Cool access tiers based on the frequency of access to documents.
+	•	Content Delivery Network (CDN): Integrated with Azure CDN to ensure that documents are served quickly worldwide.
 
-	3.	Set up Azure resources via Slapp:
-	•	Azure Web App: Deploy the React frontend.
-	•	Azure Functions App: Deploy serverless backend functions.
-	•	Azure SQL Database: Set up the database using the provided schema.
-	•	Azure Blob Storage: Configure storage containers for documents.
-	4.	Configure Environment Variables:
-	•	Create a .env file in the root directory with the necessary Azure service connection strings and keys.
-	•	Example variables:
+Open Source and Licensing
 
-REACT_APP_API_ENDPOINT=https://your-api-endpoint.azurewebsites.net
-AZURE_STORAGE_CONNECTION_STRING=your_storage_connection_string
+Open Source Contribution
 
+This project is open source to encourage collaboration and transparency. We welcome contributions from developers, data experts, and enthusiasts who want to help build a more transparent world.
 
-	5.	Deploy the Backend Functions:
+All code and data are available for review and contribution under a strict license to maintain trust:
 
-cd ../functions
-func azure functionapp publish your-function-app-name
+Licensing Terms
 
+	•	Non-Modification of Core Functionality: Contributions are allowed, but any changes that alter how the tool provides or spreads information must be vetted to ensure accuracy and prevent misinformation.
+	•	Trusted Source: This tool aims to be a trusted source of governmental information. Any forks or modified versions that attempt to alter the tool’s purpose for spreading misinformation or biased data will not be permitted.
 
-	6.	Deploy the Frontend Application:
-	•	Use Slapp’s deployment tools or Azure CLI:
+This ensures that the platform remains a reliable and unbiased resource for users around the world.
 
-az webapp up --name your-webapp-name --resource-group your-resource-group --runtime "NODE|14-lts"
+How to Get Involved
 
+This project thrives on community participation. You can contribute by:
 
-	7.	Run the Data Fetch Scripts:
-	•	These can be set up as Azure Functions or run locally to populate the database.
-	•	Example for Python scripts:
+	•	Adding Data: Contribute governmental data from your region to help expand the platform.
+	•	Improving the Code: Help us improve the platform by fixing bugs, adding features, or optimizing performance.
+	•	Spreading the Word: Share the project with others to grow our community.
 
-cd ../scripts
-pip install -r requirements.txt
-python fetch_policies.py
+Contact & LinkedIn
 
+To learn more about my work and how this platform is evolving, feel free to connect with me:
 
+	•	Callum Maystone - LinkedIn Profile
+	•	Slapp - LinkedIn Company Page
 
-Contributing
-
-We welcome contributions from around the world! Here’s how you can contribute:
-
-	•	Data Contribution: Add governmental policies and legislation from your country or region.
-	•	Code Contribution: Improve existing features or add new functionalities.
-	•	Documentation: Help us enhance the project’s documentation for better clarity.
-	•	Localization: Assist in translating the platform into other languages.
-
-Steps to Contribute
-
-	1.	Fork the repository.
-	2.	Create a new branch for your feature or bug fix.
-	3.	Commit your changes with clear messages.
-	4.	Push your branch to your forked repository.
-	5.	Open a pull request detailing your changes.
-
-Please refer to our CONTRIBUTING.md file for more details.
+I’m excited to collaborate with others who are passionate about transparency and governance, and I’m always open to discussing ideas or answering questions about the platform.
 
 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License, with restrictions around modifying the core functionality of the platform to ensure it remains a trusted source for governmental information. See the LICENSE file for more details.
 
-Contact
+Final Thoughts
 
-For questions, suggestions, or collaboration inquiries, please open an issue or reach out via email at youremail@example.com.
-
-File Structure for Git Repository
-
-global-govtransparency-tool/
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── data/
-│   ├── country_codes.json
-│   ├── countries/
-│   │   ├── usa/
-│   │   │   ├── federal/
-│   │   │   │   ├── tax_policies.json
-│   │   │   │   ├── legislation.json
-│   │   │   ├── states/
-│   │   │       ├── california/
-│   │   │       │   ├── tax_policies.json
-│   │   │       │   ├── legislation.json
-│   │   │       ├── new_york/
-│   │   │           ├── tax_policies.json
-│   │   │           ├── legislation.json
-│   │   ├── uk/
-│   │   │   ├── national/
-│   │   │   │   ├── tax_policies.json
-│   │   │   │   ├── legislation.json
-│   │   │   ├── regions/
-│   │   │       ├── scotland/
-│   │   │       ├── wales/
-│   │   └── [additional countries]/
-│
-├── src/
-│   ├── database/
-│   │   ├── setup.sql
-│   │   ├── schema.sql
-│   │   ├── db_connection.py
-│   ├── scripts/
-│   │   ├── fetch_policies.py
-│   │   ├── parse_documents.py
-│   │   ├── utils/
-│   │       ├── country_utils.py
-│   │       ├── data_validation.py
-│   ├── functions/
-│   │   ├── HttpTriggerAPI/
-│   │   │   ├── __init__.py
-│   │   │   ├── function.json
-│   │   └── [additional functions]/
-│   ├── webapp/
-│       ├── package.json
-│       ├── public/
-│       └── src/
-│           ├── components/
-│           ├── styles/
-│           └── index.js
-│
-├── tests/
-│   ├── test_database.py
-│   ├── test_visualizations.py
-│   ├── test_scripts.py
-│
-└── docs/
-    ├── architecture.md
-    ├── data_format.md
-    └── api_reference.md
-
-Additional Technical Details
-
-Integration with Slapp’s Prebuilt React Environment
-
-	•	Customization: While leveraging Slapp’s prebuilt React environment, we are customizing components to suit the needs of the transparency tool.
-	•	Modularity: The environment supports modular development, allowing for easy integration of new features and visualizations.
-	•	Continuous Improvement: Ongoing enhancements to the React environment will benefit the project by providing access to the latest features and best practices.
-
-Azure Services Configuration
-
-	•	Azure Web Apps:
-	•	Deployment Slots: Utilize deployment slots for staging and production environments.
-	•	Auto-Scaling: Configure auto-scaling rules to handle varying traffic loads.
-	•	Azure Functions:
-	•	Consumption Plan: Start with a consumption-based plan for cost efficiency.
-	•	Bindings: Use input and output bindings for seamless integration with Azure SQL Database and Blob Storage.
-	•	Azure SQL Database:
-	•	Performance Tiers: Choose the appropriate service tier based on performance needs.
-	•	Geo-Replication: Enable for disaster recovery and high availability.
-	•	Azure Blob Storage:
-	•	Access Tiers: Use hot and cool access tiers to optimize storage costs.
-	•	CDN Integration: Serve static assets via Azure CDN for improved performance.
-
-Summary of Next Steps
-
-	1.	Finalize Technical Architecture: Incorporate the use of Slapp’s cloud platform and Azure services into the project’s architectural documents.
-	2.	Update Documentation:
-	•	README.md: Reflect the integration with Slapp and provide technical specifics to enhance credibility.
-	•	architecture.md: In the docs/ folder, detail the cloud infrastructure and how different Azure services are utilized.
-	3.	Set Up Azure Resources via Slapp:
-	•	Coordinate with Slapp to provision necessary Azure resources.
-	•	Ensure that all team members have the required access and permissions.
-	4.	Develop Core Components:
-	•	Frontend: Begin building the user interface using the prebuilt React environment.
-	•	Backend: Implement Azure Functions for data processing and API endpoints.
-	5.	Implement Data Ingestion Pipelines:
-	•	Create Azure Functions or Logic Apps to automate data collection and updating.
-	•	Set up scheduled triggers for regular data refreshes.
-	6.	Enhance Security Measures:
-	•	Configure Azure Active Directory B2C for user authentication if needed.
-	•	Implement necessary firewall rules and network security groups.
-	7.	Community Engagement:
-	•	Update the CONTRIBUTING.md file with guidelines on how to set up the development environment using Slapp and Azure.
-	•	Provide resources or tutorials for contributors unfamiliar with Azure services.
-	8.	Testing and Deployment:
-	•	Write unit and integration tests for both frontend and backend components.
-	•	Set up Continuous Integration/Continuous Deployment (CI/CD) pipelines using Azure DevOps or GitHub Actions.
-	9.	Feedback and Iteration:
-	•	Deploy an initial version for internal testing.
-	•	Collect feedback and iterate on the platform’s features and performance.
-
+By integrating Slapp’s trusted cloud architecture with open-source collaboration, the Global Government Transparency Tool is designed to be a world-class platform for transparency. We believe this project will not only provide access
