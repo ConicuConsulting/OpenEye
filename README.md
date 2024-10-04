@@ -4,7 +4,7 @@
 
 **OpenEye** is an open-source platform designed to make government policies and laws accessible and understandable for everyone. By providing unbiased, raw data in a clear and visual format, OpenEye empowers citizens to explore how their governments function, helping them make informed decisions and engage more effectively in the democratic process.
 
-The platform leverages cutting-edge technology, including cloud services on **Microsoft Azure** and the **OpenAI API**, to process complex governmental data and present it in an intuitive and user-friendly way.
+The platform leverages cutting-edge technology, including cloud services on **Microsoft Azure** and the **OpenAI API**, to process complex governmental data and present it in an intuitive and user-friendly way. **Slapp**, a partner in the project, provides the enterprise cloud infrastructure and hosting services to ensure scalability and reliability.
 
 ## Why OpenEye Matters
 
@@ -14,6 +14,7 @@ Government policies are often buried within complex legal language and lengthy d
 - **Enhancing Clarity**: Utilizing AI-driven insights to simplify and summarize complex information.
 - **Promoting Transparency**: Encouraging open governance by making information readily available.
 - **Facilitating Global Understanding**: Starting with U.S. data but designed to scale globally, allowing contributions from around the world.
+- **Exposing Global Impacts**: Showcasing how foreign policies affect different nations and regions, offering insights into international relations, trade agreements, and global governance structures.
 
 ## Key Features
 
@@ -22,6 +23,7 @@ Government policies are often buried within complex legal language and lengthy d
 - **Interactive Visualizations**: Navigate policies and laws through dynamic maps and network graphs that illustrate relationships between different pieces of legislation.
 - **Global Collaboration**: Built to scale globally, enabling contributors from different countries to add and manage data for their regions.
 - **Advanced Search Functionality**: Powerful search tools allow users to find specific policies, laws, or topics of interest quickly.
+- **Global Foreign Policy Mapping**: Visualize how foreign policies and international agreements between countries affect domestic and global policies, trade, and diplomatic relations.
 
 ## How OpenEye Utilizes the OpenAI API
 
@@ -52,7 +54,7 @@ By integrating the **OpenAI API**, **OpenEye** transforms vast amounts of comple
 ### Frontend
 
 - **Framework**: Built using **React.js** for a dynamic and responsive user interface.
-- **Hosting**: Deployed on **Azure Web Apps**, ensuring high availability and performance.
+- **Hosting**: Deployed on **Azure Web Apps**, provided by **Slapp**, ensuring high availability and performance.
 - **Features**:
   - **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
   - **Visualization Libraries**: Utilizes libraries like **D3.js** and **Mapbox GL JS** for interactive graphs and maps.
@@ -60,7 +62,7 @@ By integrating the **OpenAI API**, **OpenEye** transforms vast amounts of comple
 
 ### Backend
 
-- **Serverless Architecture**: Powered by **Azure Functions** for scalable, event-driven computing.
+- **Serverless Architecture**: Powered by **Azure Functions**, with infrastructure provided by **Slapp**, ensuring scalable, event-driven computing.
 - **APIs**:
   - **RESTful API Endpoints**: Facilitate communication between the frontend and backend services.
   - **Authentication and Security**: Implements secure authentication protocols to protect user data and platform integrity.
@@ -70,7 +72,7 @@ By integrating the **OpenAI API**, **OpenEye** transforms vast amounts of comple
 
 ### Data Storage
 
-- **Structured Data**: Stored in an **Azure SQL Database** for efficient querying and management.
+- **Structured Data**: Stored in an **Azure SQL Database** for efficient querying and management, powered by **Slapp**.
   - **Schema Design**: Optimized for relational data representing policies, laws, and their relationships.
 - **Unstructured Data**: Stored in **Azure Blob Storage** for handling documents like PDFs and multimedia files.
   - **Access Tiers**: Configured for cost-effective storage based on data retrieval frequency.
@@ -122,12 +124,9 @@ We welcome contributions from the community to help expand and improve **OpenEye
 - **Documentation**: Detailed technical documents are available in the repository to help you get started.
 - **Community Discussions**: Join our forums or Slack channel to collaborate with other contributors.
 
-## Connect with me:
-- [LinkedIn: Callum Maystone](https://www.linkedin.com/in/callum-maystone-57b00932?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
-- [LinkedIn: Slapp](https://www.linkedin.com/company/myslapp/)
+### Support the Project
 
-You can also check out the project repository and get involved:
-- [GitHub: OpenEye](https://github.com/yourgithub/openeye)
+**Slapp** provides the enterprise cloud architecture and hosting for **OpenEye**, ensuring scalability and reliability for this global project. If you'd like to support the ongoing development and infrastructure costs, donations are welcome. Contact us at **contact@mysl.app** to contribute.
 
 ## License
 
