@@ -136,7 +136,3 @@ I’m excited to collaborate with others who are passionate about transparency a
 License
 
 This project is licensed under the MIT License, with restrictions around modifying the core functionality of the platform to ensure it remains a trusted source for governmental information. See the LICENSE file for more details.
-
-Final Thoughts
-
-By integrating Slapp’s trusted cloud architecture with open-source collaboration, the Global Government Transparency Tool is designed to be a world-class platform for transparency. We believe this project will not only provide access
