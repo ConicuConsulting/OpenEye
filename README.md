@@ -1,8 +1,6 @@
-Absolutely! Incorporating Slapp’s cloud architecture platform into the project is an excellent idea. Leveraging their trusted cloud services, particularly with Azure Web Apps and Function Apps, will enhance the project’s credibility and scalability. Below is the updated README.md and file structure that includes technical specifics about how the project will be configured using Slapp’s platform.
 
-README.md
 
-OpenEye - Global Government Transparency Tool
+# OpenEye - Global Government Transparency Tool
 
 Overview
 
