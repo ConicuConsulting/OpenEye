@@ -122,6 +122,13 @@ We welcome contributions from the community to help expand and improve **OpenEye
 - **Documentation**: Detailed technical documents are available in the repository to help you get started.
 - **Community Discussions**: Join our forums or Slack channel to collaborate with other contributors.
 
+## Connect with me:
+- [LinkedIn: Callum Maystone](https://www.linkedin.com/in/callum-maystone-57b00932?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- [LinkedIn: Slapp](https://www.linkedin.com/company/myslapp/)
+
+You can also check out the project repository and get involved:
+- [GitHub: OpenEye](https://github.com/yourgithub/openeye)
+
 ## License
 
 **OpenEye** is released under the **MIT License**, allowing for open collaboration while ensuring the platform remains a trusted source of information. The license includes specific restrictions to prevent unauthorized alterations to the core functionality that could compromise data integrity or platform security.
