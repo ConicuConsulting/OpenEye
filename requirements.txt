@@ -1,0 +1,7 @@
+beautifulsoup4
+lxml
+spaCy
+networkx
+py2neo
+matplotlib
+dotenv
