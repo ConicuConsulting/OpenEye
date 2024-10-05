@@ -4,4 +4,4 @@ spaCy
 networkx
 py2neo
 matplotlib
-dotenv
+dotenv-python
