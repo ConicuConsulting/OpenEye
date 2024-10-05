@@ -1,96 +1,206 @@
-Great to hear that the structure is set up and the requirements are installed! The next steps involve:
+Here’s a Python script that will set up the project structure, create the necessary directories and files, and include starter content for your scripts and configurations based on what we discussed.
 
-1. Configure the Environment
+Save this script as `setup_project.py` and run it to set up the **OpenEye** project structure:
 
-You’ll need to set up your .env file with the proper Neo4j and any other environment-related configurations:
+```python
+import os
 
-cp .env.example .env
+# Define the project structure
+project_structure = {
+    "data": {
+        "raw": {
+            "irc": {}
+        },
+        "processed": {
+            "irc": {}
+        },
+        "references": {
+            "federal": {},
+            "state": {}
+        }
+    },
+    "scripts": {
+        "parse_xml.py": """import os
+import json
+from bs4 import BeautifulSoup
 
-Then, edit the .env file with your Neo4j credentials:
+# Define your parsing logic here
+# Example parse logic
+def parse_title_xml(title_number):
+    pass
+""",
+        "extract_references.py": """import os
+import re
 
+# Define your reference extraction logic here
+def extract_references(title_number):
+    pass
+""",
+        "ingest_to_neo4j.py": """from py2neo import Graph, Node, Relationship
+
+# Neo4j ingestion script
+def ingest_titles(graph):
+    pass
+
+def ingest_references(graph):
+    pass
+""",
+        "visualize_graph.py": """import networkx as nx
+import matplotlib.pyplot as plt
+
+# Define your visualization logic here
+def visualize(G):
+    pass
+"""
+    },
+    "src": {
+        "database": {
+            "setup_neo4j.sh": """#!/bin/bash
+# Script to set up Neo4j using Docker
+docker run \\
+    --name openeye-neo4j \\
+    -p7474:7474 -p7687:7687 \\
+    -d \\
+    -e NEO4J_AUTH=neo4j/your_password \\
+    neo4j:latest
+""",
+            "schema.cypher": """CREATE CONSTRAINT ON (t:Title) ASSERT t.title_number IS UNIQUE;
+CREATE CONSTRAINT ON (s:Section) ASSERT s.id IS UNIQUE;
+
+// Example node creation
+CREATE (t1:Title {title_number: 1, name: "GENERAL PROVISIONS"});
+"""
+        },
+        "utils": {
+            "config.py": """import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+NEO4J_URI = os.getenv('NEO4J_URI')
+NEO4J_USER = os.getenv('NEO4J_USER')
+NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD')
+DATA_DIR = os.path.join(os.path.dirname(__file__), '../../data')
+"""
+        }
+    },
+    "tests": {
+        "test_parse_xml.py": "# Test parse_xml.py",
+        "test_extract_references.py": "# Test extract_references.py",
+        "test_ingest_to_neo4j.py": "# Test ingest_to_neo4j.py"
+    },
+    ".env.example": """# Example .env file
 NEO4J_URI=bolt://localhost:7687
 NEO4J_USER=neo4j
 NEO4J_PASSWORD=your_password
+""",
+    "requirements.txt": """beautifulsoup4
+lxml
+spaCy
+networkx
+py2neo
+matplotlib
+dotenv
+"""
+}
 
-This file will be used by the scripts to connect to Neo4j.
+# Function to create directories and files
+def create_structure(base_path, structure):
+    for name, content in structure.items():
+        path = os.path.join(base_path, name)
+        if isinstance(content, dict):
+            # Create directory
+            os.makedirs(path, exist_ok=True)
+            create_structure(path, content)  # Recurse into subdirectory
+        else:
+            # Create file and write content
+            with open(path, 'w') as file:
+                file.write(content)
 
-2. Set Up Neo4j
-sudo apt install cuda-drivers
-If you haven’t already set up Neo4j, follow these steps:
+# Set base directory as the current project directory
+base_dir = os.getcwd()
 
-Option 1: Using Docker (recommended)
+# Create the project structure
+create_structure(base_dir, project_structure)
 
-Run the following command to start Neo4j in a Docker container:
+print("Project structure created successfully!")
+```
 
-./src/database/setup_neo4j.sh
+### Steps to Run:
+1. **Save the script** as `setup_project.py` in your project directory.
+   
+   For example, if your project directory is:
+   ```bash
+   ~/projects/OpenEye
+   ```
+   save it as:
+   ```bash
+   ~/projects/OpenEye/setup_project.py
+   ```
 
-Make sure you’ve replaced your_password in the script with your desired password.
+2. **Run the script** to create the entire project structure:
 
-Option 2: Using Neo4j Desktop
+   In your terminal, navigate to the **OpenEye** directory and run:
+   ```bash
+   python setup_project.py
+   ```
 
-	1.	Install Neo4j Desktop from Neo4j Downloads.
-	2.	Create a new project and database in Neo4j Desktop.
-	3.	Note down the Bolt URL (usually bolt://localhost:7687), username, and password for your database, and add them to your .env file.
+### Resulting Project Structure:
+After running the script, your project directory should now look like this:
 
-3. Initialize the Neo4j Database Schema
+```bash
+.
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── data
+│   ├── processed
+│   │   └── irc
+│   └── raw
+│       └── irc
+├── scripts
+│   ├── extract_references.py
+│   ├── ingest_to_neo4j.py
+│   ├── parse_xml.py
+│   └── visualize_graph.py
+├── src
+│   ├── database
+│   │   ├── schema.cypher
+│   │   └── setup_neo4j.sh
+│   └── utils
+│       └── config.py
+├── tests
+│   ├── test_extract_references.py
+│   ├── test_ingest_to_neo4j.py
+│   └── test_parse_xml.py
+└── .env.example
+```
 
-Now that Neo4j is set up, you need to initialize the database with the schema.
+### What's Included:
+- **Data Directory**: For storing raw and processed IRC documents.
+- **Scripts**:
+  - `parse_xml.py`: For parsing XML documents.
+  - `extract_references.py`: For extracting references between sections.
+  - `ingest_to_neo4j.py`: For loading data into Neo4j.
+  - `visualize_graph.py`: For visualizing the relationships.
+- **src Directory**: For configuration and utility scripts, and the database schema and setup scripts.
+- **Tests Directory**: Placeholder unit test files.
+- **`.env.example`**: Example file to manage environment variables.
+- **`requirements.txt`**: Lists the necessary Python packages.
 
-Run the Cypher script to define constraints and create the basic structure:
+### Next Steps:
+1. **Install the dependencies** by running:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-cypher-shell -u neo4j -p your_password -f src/database/schema.cypher
+2. **Set up Neo4j**:
+   - Use the `setup_neo4j.sh` script in `src/database/` to launch a Neo4j container or set up Neo4j Desktop.
 
-This will set up the initial constraints and nodes for Titles and Sections in your database.
+3. **Edit the scripts** (e.g., `parse_xml.py`, `ingest_to_neo4j.py`, etc.) to implement your logic.
 
-4. Process and Parse XML Files
+4. **Run the scripts** and test the functionality.
 
-Now you’ll want to start processing the XML documents of the Internal Revenue Code (IRC). Make sure the XML files are placed in the data/raw/irc/ directory.
+---
 
-You can start by running the parse_xml.py script to convert the XML to JSON and extract useful information:
-
-python scripts/parse_xml.py
-
-Modify the parse_title_xml() function in scripts/parse_xml.py as needed to customize how sections and headings are extracted.
-
-5. Extract References Between Sections
-
-After parsing the XML, you can now run the script that extracts references between different sections of the code:
-
-python scripts/extract_references.py
-
-This will create a JSON file containing all the inter-references between sections. You can modify the regex patterns in extract_references.py to detect more complex reference formats if necessary.
-
-6. Ingest Data into Neo4j
-
-Once the XML is parsed and the references are extracted, you can ingest the data into the Neo4j graph database:
-
-python scripts/ingest_to_neo4j.py
-
-This script will:
-
-	•	Create nodes for Titles and Sections.
-	•	Establish relationships (CONTAINS, REFERENCES, etc.) between sections based on the extracted references.
-
-7. Visualize the Relationships
-
-After ingesting the data, you can visualize the relationships between sections using NetworkX and Matplotlib:
-
-python scripts/visualize_graph.py
-
-This will create a visualization showing how sections reference each other. The visualization script can be expanded later to include more advanced graph layouts and filtering.
-
-8. Debugging and Improvements
-
-At this stage:
-
-	•	You should check the logs and outputs of each step to ensure everything is being parsed, ingested, and visualized correctly.
-	•	If some sections or references are missing, adjust the parsing logic in parse_xml.py or tweak the regex patterns in extract_references.py.
-
-Next Steps for Further Development:
-
-	•	Enhance Reference Detection: Improve the extract_references.py script to catch all types of references in the document.
-	•	Expand Schema: As you process more documents, you may want to expand the database schema to include more node types (e.g., “Amends”, “Repeals”, etc.) or relationships (e.g., “CITES”, “IMPACTS”).
-	•	Web Visualization: Consider integrating a web-based dashboard (e.g., React.js + Neo4j Bloom) to allow interactive graph visualizations directly from the web browser.
-	•	Automate Ingestion: Set up automated jobs (via cron jobs or Azure Functions) to ingest new updates to the IRC or other documents.
-
-By following these steps, you’ll be able to see how sections of the IRC are related and visualize the references between them. Let me know if any part of the process needs further clarification or if you hit any issues during the setup!
+This script should help you hit the ground running with your **OpenEye** project by setting up everything you need in one go. Let me know if you need any further adjustments!
