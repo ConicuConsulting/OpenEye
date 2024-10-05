@@ -15,7 +15,7 @@ NEO4J_PASSWORD=your_password
 This file will be used by the scripts to connect to Neo4j.
 
 2. Set Up Neo4j
-
+sudo apt install cuda-drivers
 If you haven’t already set up Neo4j, follow these steps:
 
 Option 1: Using Docker (recommended)
