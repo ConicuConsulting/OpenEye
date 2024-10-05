@@ -1,7 +1,3 @@
-beautifulsoup4
-lxml
-spaCy
-networkx
-py2neo
-matplotlib
-dotenv-python
+py2neo==2021.2.4
+python-dotenv==1.0.1
+numpy==2.0.2
