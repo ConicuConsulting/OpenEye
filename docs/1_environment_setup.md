@@ -1,4 +1,4 @@
-Certainly! Here’s a Python script that will set up the project structure, create the necessary directories and files, and include starter content for your scripts and configurations based on what we discussed.
+Here’s a Python script that will set up the project structure, create the necessary directories and files, and include starter content for your scripts and configurations based on what we discussed.
 
 Save this script as `setup_project.py` and run it to set up the **OpenEye** project structure:
 
