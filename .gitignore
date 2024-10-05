@@ -186,3 +186,23 @@ venv/
 env/
 *.env
 *.log
+
+# Ignore raw and processed data folders
+data/raw/
+data/processed/
+
+# Ignore Neo4j database files (if running locally)
+neo4j/
+
+# Ignore environment variables and secrets
+.env
+.env.*
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment directories
+venv/
+env/
