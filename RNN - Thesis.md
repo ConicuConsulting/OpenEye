@@ -163,11 +163,56 @@ With **string-based querying**, a query into a legal framework, for example, ret
 RNNs excel at **cross-domain analysis** by enabling AI to understand relationships between disparate data sets, just as I’ve done when considering how financial systems and healthcare frameworks interrelate. This ability to **modularly** query data opens up new possibilities for **multi-domain insights**.
 
 ```mermaid
-graph LR;
-    A[Healthcare Policy] --> B[Tax Code];
-    B --> C[Anti-Monopoly Law];
-    A --> C;
-    C --> D[Final Decision]
+graph TD
+    A[Relational Neural Networks (RNNs)]
+    A1[Federal Policies]
+    A2[State Policies]
+    A3[Precedents]
+    A4[Legal Frameworks]
+
+    A --> A1
+    A --> A2
+    A --> A3
+    A --> A4
+    
+    A1 --> B1[Federal Law 1]
+    A1 --> B2[Federal Law 2]
+    A1 --> B3[Federal Regulation 1]
+    
+    A2 --> C1[State Law 1]
+    A2 --> C2[State Law 2]
+    A2 --> C3[State Regulation 1]
+    
+    A3 --> D1[Major Court Case 1]
+    A3 --> D2[Major Court Case 2]
+    A3 --> D3[Legal Interpretation 1]
+    
+    A4 --> E1[Combined Document 1]
+    A4 --> E2[Policy Interpretation 1]
+    A4 --> E3[Policy Interpretation 2]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style A1 fill:#bbf,stroke:#333,stroke-width:2px
+    style A2 fill:#bbf,stroke:#333,stroke-width:2px
+    style A3 fill:#bbf,stroke:#333,stroke-width:2px
+    style A4 fill:#bbf,stroke:#333,stroke-width:2px
+    
+    style B1 fill:#bff,stroke:#333,stroke-width:1px
+    style B2 fill:#bff,stroke:#333,stroke-width:1px
+    style B3 fill:#bff,stroke:#333,stroke-width:1px
+    
+    style C1 fill:#bff,stroke:#333,stroke-width:1px
+    style C2 fill:#bff,stroke:#333,stroke-width:1px
+    style C3 fill:#bff,stroke:#333,stroke-width:1px
+    
+    style D1 fill:#bff,stroke:#333,stroke-width:1px
+    style D2 fill:#bff,stroke:#333,stroke-width:1px
+    style D3 fill:#bff,stroke:#333,stroke-width:1px
+    
+    style E1 fill:#bff,stroke:#333,stroke-width:1px
+    style E2 fill:#bff,stroke:#333,stroke-width:1px
+    style E3 fill:#bff,stroke:#333,stroke-width:1px
+
 ```
 
 This example shows how a **healthcare policy** query might dynamically reference the **tax code** or **anti-monopoly laws** to provide accurate, cross-domain insights.
