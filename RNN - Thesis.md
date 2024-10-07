@@ -1,46 +1,116 @@
+Certainly! I’ll ensure that the version maintains both your **personal journey** and **technical depth** without sounding overly conceptual or disconnected from practical execution. This way, you can showcase your thinking as visionary yet grounded in detailed analysis and execution.
 
+---
+
+### **Version Without Visuals (For Immediate Posting)**
 
 # **Bridging Neural and Relational Networks: A New Framework for Scalable AI Systems**
 
 ### **Introduction**
-In the evolving landscape of AI, models have achieved remarkable advancements, but there remains a significant gap in the ability of neural networks to efficiently handle cross-domain relationships across complex fields such as law, healthcare, and finance. This thesis introduces **Relational Neural Networks (RNNs)**—a next-generation framework that merges the computational power of neural networks with relational networks, creating **modular, attribute-based systems** that dynamically map complex relationships.
+As AI evolves, it’s clear that while we’ve made significant strides in data analysis and predictive modeling, there’s still a gap in how systems handle cross-domain relationships. Neural networks excel at pattern recognition but falter when dealing with datasets that require dynamic reasoning across multiple disciplines like law, healthcare, and finance.
 
-This approach is rooted in both my professional experience and my personal journey. Over the years, I’ve learned to identify and **build connections in real life**, whether it's understanding how legal codes interact with financial systems or seeing the implications of small actions in everyday life—such as a misplaced cable interrupting a work routine. These insights on **systems thinking** have led me to understand the importance of not just collecting vast amounts of data but **structuring relationships** between data points with precision, using **attributes and policies** to govern the connections.
-
-By focusing on precision, **Relational Neural Networks** reduce computational overhead and enhance the AI model's ability to solve real-world, high-level problems.
+This thesis introduces **Relational Neural Networks (RNNs)**—a novel AI framework that merges the computational power of neural networks with the relational context needed to handle complex multi-domain insights. Drawing from my personal journey, where I’ve learned to identify **real-world relationships**—from simple everyday observations to complex systems thinking in enterprise environments—this framework proposes a **modular, attribute-based structure** that addresses the inefficiencies in current models.
 
 ---
 
-### **Identifying the Gaps in Current AI Models**
-AI models have excelled at specific tasks like image recognition and language generation. However, these models still struggle when it comes to **interrelating data across domains**. Traditional neural networks need large amounts of data and computational power to infer relationships, often resulting in **inefficient processing** of context-rich or cross-domain data. 
+### **The Gaps in Current AI Models**
+Traditional neural networks focus on recognizing patterns and processing large amounts of data, but they struggle when it comes to **understanding relationships between different domains**. While effective at tasks like image recognition and language generation, these models require significant computational resources to infer relationships, often resulting in inefficient processing of **context-rich data**.
 
-This problem mirrors challenges I’ve encountered in everyday life. For instance, consider the frustration caused by the lack of awareness in small actions like leaving a door open, which has **unintended ripple effects** such as increased energy use and misplacing items. These real-world experiences have taught me that relationships and actions are interconnected—just like data in AI systems. If we can define those **relationships** up front, instead of relying on post hoc inference, we can **improve efficiency** and **precision** dramatically.
+Through my own experiences—whether it’s understanding how minor actions create ripple effects in life or how legal systems interact with financial regulations—I’ve come to realize that these relationships need to be **pre-defined**. Much like I recognize how leaving a door open impacts everything from energy use to comfort, AI should recognize predefined **attributes and policies** that guide how relationships are formed, thus **reducing the computational burden** on the model.
 
-Relational Neural Networks solve this by **pre-defining relationships and attributes within the data structure**, allowing AI to focus on making informed decisions rather than recalculating connections from scratch.
+**Relational Neural Networks (RNNs)** address these inefficiencies by embedding relationships within the data structure itself, allowing for **dynamic querying** and precise **cross-domain insights**.
 
 ---
 
-### **The Concept: Modular Relational Neural Networks (RNNs)**
-RNNs break down data into **modular components** that can be individually queried or related to each other dynamically. Each module contains:
+### **Modular Relational Neural Networks: The Core Concept**
+At the heart of **RNNs** is the idea that data can be broken down into **modular components**, each with its own **nodes**, **attributes**, and **policies**. These components can be **queried dynamically**, allowing the AI to make **informed decisions** based on pre-defined relationships rather than starting from scratch with every query.
 
-- **Nodes**: Representing data points (documents, sections, entities).
-- **Attributes**: Defining the characteristics and context of each node (e.g., federal/state, clinical/administrative).
-- **Policies**: Governing the relationships between nodes, ensuring that connections follow logical, contextual rules.
-- **Strings**: Predefined paths for querying related nodes, allowing for efficient real-time data retrieval.
+Each module in the RNN structure consists of:
+- **Nodes**: Representing individual data points, sections, or documents.
+- **Attributes**: Defining the relationships and context (e.g., federal or state law, clinical or administrative regulation).
+- **Policies**: Governing the interaction between nodes, ensuring logical consistency across datasets.
+- **Strings**: Predefined paths for querying related data points, drastically improving **query efficiency**.
 
-This approach draws from my understanding of how systems behave in the real world. Just as different systems in life—like healthcare, tax codes, and legal systems—interact based on certain policies and rules, **RNNs mirror these real-world interdependencies**.
-
-In a legal framework, for instance, **nodes** may represent sections and clauses of a legal document, while **attributes** define whether these clauses are federal or state-specific. **Policies** could enforce how these clauses interact, ensuring that **cross-document relationships**—such as references to precedents—adhere to legal frameworks.
+This modular approach is similar to how I’ve navigated complex enterprise systems—whether mapping out Active Directory hierarchies or understanding the knock-on effects of decisions in organizational environments. It’s about **applying real-world systems thinking** to AI models to increase **precision** and **scalability**.
 
 ---
 
 ### **Building Relationships Across Domains**
+RNNs excel in situations where **cross-domain insights** are crucial. For example, understanding how healthcare regulations affect tax compliance requires an AI model that can navigate between **different datasets** and **pre-configured relationships**.
 
-In the context of RNNs, the relationships between data nodes are built on **real-world rules** just like how we form mental models when connecting events, objects, and outcomes in life. For example, when we think about the legal impact of healthcare regulations, we don't reinvent the relationships between laws every time—they’re governed by pre-existing rules and policies.
+By embedding **relational attributes** and **policies**, RNNs create **modular structures** that can be queried dynamically, allowing AI to identify connections without needing to compute everything from scratch. This is precisely how I’ve approached solving problems—seeing the interconnectedness between different fields and structuring solutions accordingly.
 
-In RNNs, these **relationships are explicitly defined** between nodes, and policies guide how connections between nodes are formed across datasets. For instance, in a tax law system, a policy might stipulate that **federal provisions** override **state rules** in the context of financial reporting.
+---
 
-#### **Example 1: Internal Revenue Code Mapping**
+### **Attributes and Policies: Precision in Context**
+The key to RNNs’ effectiveness lies in how they **embed attributes and policies** into the data structure. Rather than allowing the AI to infer relationships on its own, attributes provide **context** (e.g., federal vs. state law), while policies define how these relationships function.
+
+Much like how I’ve identified **systems-level patterns** in my personal and professional life—such as how actions in one area impact outcomes in another—RNNs apply these pre-configured rules to guide AI in building relationships.
+
+---
+
+### **String-Based Querying for Efficient Data Access**
+In **RNNs**, data retrieval is streamlined through **string-based querying**, which allows AI to follow **pre-defined paths** between nodes. This drastically improves **query times** and ensures that the AI retrieves the right information quickly.
+
+This mirrors how I’ve approached problem-solving in real life—focusing not on the vast amount of data available but on **building relationships** that allow for more **precise decision-making**.
+
+---
+
+### **Real-World Application: The OpenEye Project**
+The **OpenEye Project** serves as a practical implementation of **Relational Neural Networks**, mapping out **legal and governmental frameworks** to improve transparency. By creating predefined relationships between policies, legal precedents, and regulations, **OpenEye** allows for **real-time querying** across multiple domains.
+
+For example, querying the system for the legal implications of merging two companies would dynamically reference **tax laws**, **anti-monopoly regulations**, and **healthcare policies**—all governed by **pre-configured relational attributes**.
+
+---
+
+### **Creating a New Standard for Scalable AI Models**
+By merging **Neural Networks** with **Relational Networks**, RNNs create a scalable framework for AI systems that focus on **efficiency** and **contextual understanding**. This model is particularly powerful in **cross-disciplinary fields**, enabling AI to pull insights from multiple domains with **speed** and **precision**.
+
+---
+
+### **Conclusion**
+**Relational Neural Networks (RNNs)** represent a transformative approach to building more **scalable**, **efficient**, and **context-aware** AI systems. By embedding relationships, attributes, and policies directly into the data structure, RNNs unlock new possibilities for cross-domain insights and decision-making.
+
+As AI continues to evolve, **RNNs** offer a promising future where precision, scalability, and efficiency can be realized without the need for overwhelming amounts of data. It’s about **building relationships** that **drive decisions**, much like how we understand the interconnectedness of everyday actions and outcomes.
+
+---
+
+### **Call to Action**
+This framework is just the beginning. I invite academics, professionals, and developers to collaborate and explore how **Relational Neural Networks** can drive innovation across various industries, from healthcare to law and finance.
+
+Reach out to me for more insights and collaboration:
+
+- **LinkedIn**: [Callum Maystone](https://www.linkedin.com/in/callum-maystone)
+- **Medium**: [My Publications](https://medium.com/@callum_26623)
+- **GitHub**: [OpenEye Project](https://github.com/yourgithub/openeye)
+
+---
+
+### **Version With Visuals (For Posting With Diagrams)**
+
+# **Bridging Neural and Relational Networks: A New Framework for Scalable AI Systems**
+
+### **Introduction**
+As AI evolves, it’s clear that while we’ve made significant strides in data analysis and predictive modeling, there’s still a gap in how systems handle cross-domain relationships. Neural networks excel at pattern recognition but falter when dealing with datasets that require dynamic reasoning across multiple disciplines like law, healthcare, and finance.
+
+This thesis introduces **Relational Neural Networks (RNNs)**—a novel AI framework that merges the computational power of neural networks with the relational context needed to handle complex multi-domain insights. Drawing from my personal journey, where I’ve learned to identify **real-world relationships**—from simple everyday observations to complex systems thinking in enterprise environments—this framework proposes a **modular, attribute-based structure** that addresses the inefficiencies in current models.
+
+---
+
+### **The Gaps in Current AI Models**
+AI models often lack the ability to interrelate data across domains without significant computational resources. Much like how I’ve come to understand how **real-world actions create ripple effects**, AI needs to be designed to **pre-define relationships** rather than infer them through computationally expensive processes.
+
+**Relational Neural Networks (RNNs)** address these inefficiencies by embedding relationships directly into the **data structure**, allowing for **dynamic querying** and precise **cross-domain insights**.
+
+---
+
+### **Modular Relational Neural Networks: The Core Concept**
+RNNs break down data into **modular components** that are **self-contained** and dynamically interrelated. Each module consists of:
+
+- **Nodes**: Representing data points or entities.
+- **Attributes**: Providing the **context** for each node (e.g., federal or state law).
+- **Policies**: Governing relationships between nodes.
+- **Strings**: Predefined paths for querying relationships in **real-time**.
 
 ```mermaid
 graph TD;
@@ -52,115 +122,72 @@ graph TD;
     C --> G[Subsection B];
 ```
 
-This example represents a hierarchical breakdown of the **Internal Revenue Code**. Each section, subsection, and clause is treated as a **node** with its own set of **attributes** (such as state/federal), and the policies that govern their relationships are pre-configured to enforce **compliance rules**. Just like in real-world thinking, these **predefined relationships** allow AI to understand how these clauses interact without needing to reprocess all the data.
+In this example, the **Internal Revenue Code** is broken down into sections and subsections, allowing the AI to query relationships between these data points with efficiency and precision.
 
 ---
 
-### **Attributes and Policies: Providing Context to Relationships**
-One of the core aspects of Relational Neural Networks is that **attributes and policies** are configured to provide **context**. In many ways, this reflects my own real-world ability to identify relationships. In daily life, I’m always thinking about how seemingly unrelated things—like the knock-on effects of minor actions—are interconnected. This is how I translate **systems thinking** into AI.
+### **Attributes and Policies: Precision in Context**
 
-**Attributes** represent the characteristics of nodes. For instance, in legal documents, an attribute could define whether a clause is **applicable at the federal level** or only relevant to state matters. In healthcare, attributes might specify whether a regulation relates to **clinical practice** or **administrative process**.
-
-**Policies** are rules that **govern how these nodes interact**. For example, a policy could dictate that a section of the law cannot contradict another section, or that certain regulations take precedence over others. By configuring these policies ahead of time, RNNs allow for **precision** in how the relationships are formed and navigated.
-
-#### **Example 2: Attributes and Policies Structure**
+The effectiveness of RNNs comes from how they use **attributes** to define relationships and **policies** to govern how nodes interact. Just as I’ve been able to identify **systems-level patterns** in real life, AI can follow similar paths to understand relationships based on predefined attributes.
 
 ```mermaid
 graph TD;
     A[Document] --> B[Attributes: Federal/State];
     A --> C[Policies: Compliance];
-    C --> D[Relational Queries];
+    C -->
+
+ D[Relational Queries];
 ```
 
-In this structure:
-- **Attributes** give the AI a **contextual understanding** of the data it’s processing. For instance, the AI would know that federal laws take precedence over state laws in a compliance query.
-- **Policies** enforce the logical rules behind these relationships, ensuring that the data remains consistent across domains.
+Attributes and policies guide the AI’s understanding of relationships, providing context and reducing the computational load.
 
 ---
 
-### **String-Based Querying: Efficient Data Retrieval with Precision**
-In RNNs, **string-based querying** allows for efficient real-time access to related data. Instead of reprocessing the entire dataset, the AI system follows pre-defined **query strings** that link related sections. These strings can reference **specific clauses** or **legal precedents**, speeding up the retrieval process.
-
-This mirrors how I’ve approached problem-solving in my own life—focusing not on **the abundance of data** but on **building relationships** that allow for better decision-making.
-
-#### **Example 3: API Query Example**
+### **String-Based Querying for Efficient Data Access**
+One of the most critical advancements is the introduction of **string-based querying**, which drastically improves the efficiency of data access by allowing AI systems to follow **predefined paths** between nodes, saving computational resources.
 
 ```mermaid
 graph TD;
     A[API Query] --> B[Legal Framework];
     B --> C[Retrieve Clause];
     B --> D[Retrieve Reference];
-    D --> E[Return Result];
+    D --> E[Return Result]
 ```
 
-In this example:
-- An API query is made into the **Legal Framework**.
-- The system uses **predefined relationships** to pull relevant clauses and references based on the query string, adhering to policies governing those relationships.
+With **string-based querying**, a query into a legal framework, for example, retrieves relevant clauses and references in a way that mirrors the relational logic I’ve built into this framework.
 
 ---
 
-### **Interconnected Thinking and Multi-Domain Queries**
+### **Building Relationships Across Domains**
 
-In real life, we often need to pull insights from different disciplines—like understanding how healthcare regulations interact with tax law. **RNNs make this possible** by allowing the AI to handle **cross-domain queries** based on the relationships, attributes, and policies we’ve defined in advance.
-
-#### **Example 4: Cross-Domain Queries**
+RNNs excel at **cross-domain analysis** by enabling AI to understand relationships between disparate data sets, just as I’ve done when considering how financial systems and healthcare frameworks interrelate. This ability to **modularly** query data opens up new possibilities for **multi-domain insights**.
 
 ```mermaid
 graph LR;
     A[Healthcare Policy] --> B[Tax Code];
     B --> C[Anti-Monopoly Law];
     A --> C;
-    C --> D[Final Decision];
+    C --> D[Final Decision]
 ```
 
-Here, we see the interaction between healthcare policies and tax codes in the context of **anti-monopoly law**. This cross-domain query allows the AI to consider **multiple data sets** simultaneously, governed by policies that maintain the logical relationships between them.
-
-In the real world, this mirrors how I’ve been able to **cross-apply insights** from different fields—seeing how tax law interacts with finance or how seemingly minor actions in daily life have **wide-reaching implications**.
+This example shows how a **healthcare policy** query might dynamically reference the **tax code** or **anti-monopoly laws** to provide accurate, cross-domain insights.
 
 ---
 
-### **Dense Relationships: Structuring Neural Networks for Precision**
+### **Conclusion**
+Relational Neural Networks (RNNs) combine **neural network capabilities** with **relational data structures** to create a powerful, scalable, and efficient AI model that handles **cross-domain insights** with ease. By embedding relationships into the data, AI systems can operate more like **human cognitive thinking**, efficiently understanding how entities relate without the need for extensive computation.
 
-By embedding these relationships, attributes, and policies within the **data structure**, we create **dense relational networks** that enable the AI to process data more **efficiently**. In contrast to traditional neural networks that require vast computational resources to infer relationships, **RNNs** pre-define the **contextual links** between data points.
-
-#### **Example 5: Modular Neural Network Architecture with RNN Integration**
-
-```mermaid
-graph TD;
-    A[Modular Neural Network] --> B[Healthcare Module];
-    A --> C[Tax Code Module];
-    A --> D[Legal Framework Module];
-    B --> E[Cross-Module Queries];
-    C --> F[Cross-Module Policies];
-    D --> G[Contextual Relationships];
-```
-
-In this model:
--
-
- Each module (Healthcare, Tax Code, Legal Framework) operates independently but interacts through **cross-module queries**.
-- **Policies** govern the relationships between these modules, allowing the AI to navigate complex, cross-domain issues with precision.
-  
-This mirrors how, in my own thinking, I’ve been able to **build connections between different domains**, whether it's understanding how financial policies interact with healthcare systems or how small decisions impact larger workflows.
+This methodology has applications across many sectors—law, healthcare, finance—and presents a new way of thinking about how AI can be used to improve real-world decision-making.
 
 ---
-
-### **Conclusion: Precision, Context, and AI for the Future**
-Relational Neural Networks (RNNs) provide a revolutionary way to handle complex, cross-domain data relationships by embedding **attributes** and **policies** into the data structure. This approach prioritizes **precision** and **efficiency** over raw computational power, allowing AI models to handle more **complex reasoning** across multiple fields.
-
-Through this framework, I’ve been able to apply the **interconnected thinking** I’ve developed in real life—building relationships between seemingly unrelated concepts and translating that understanding into an AI architecture that reflects the **true complexity** of the systems we live in.
-
-By focusing on relationships rather than just data, RNNs offer a powerful tool for building AI systems that mirror the **cognitive thinking** we use to navigate our daily lives.
-
---- 
 
 ### **Call to Action**
-
-This thesis is an invitation for collaboration. By sharing these ideas through the **OpenEye** project and other platforms, I hope to work with academics, professionals, and developers who are interested in advancing **AI model efficiency** through **relational and modular frameworks**. Reach out to me to explore how **Relational Neural Networks** can drive innovation across multiple sectors.
-
-**Contact:**
+I invite you to join me in further exploring how **Relational Neural Networks** can be applied across industries to create more efficient and scalable AI systems. Let’s collaborate to refine and expand this methodology.
 
 - **LinkedIn**: [Callum Maystone](https://www.linkedin.com/in/callum-maystone)
 - **Medium**: [My Publications](https://medium.com/@callum_26623)
 - **GitHub**: [OpenEye Project](https://github.com/yourgithub/openeye)
 
+--- 
+
+These versions should now provide both a **clear, well-articulated thesis** and a **structured framework** of the technical side of the Relational Neural Network concept, while also grounding it in real-world observations and connections you've made.
