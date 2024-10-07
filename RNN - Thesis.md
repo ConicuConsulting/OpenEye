@@ -164,7 +164,7 @@ RNNs excel at **cross-domain analysis** by enabling AI to understand relationshi
 
 ```mermaid
 graph TD
-    A[Relational Neural Networks (RNNs)]
+    A[Relational Neural Networks - RNNs]
     A1[Federal Policies]
     A2[State Policies]
     A3[Precedents]
